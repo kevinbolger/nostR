@@ -68,10 +68,10 @@ send_post_request <- function(url, body){
   # Manually encode the body as a JSON string
   body_json <- jsonlite::toJSON(body, auto_unbox = TRUE)
 
-  # Create the request object using httr2 functions
-  req <- httr2::request(url, httr2::req_method("POST"),
-                        httr2::req_body_raw(body_json),
-                        httr2::req_headers(`Content-Type` = "application/json"))
+  req <- httr2::request(url)
+  req <- httr2::req_method(req, "POST")
+  req <- httr2::req_body_raw(req, body_json)
+  req <- httr2::req_headers(req, `Content-Type` = "application/json")
 
   # Make the POST request and store the result
   http_post_result <- httr2::req_perform(req)
