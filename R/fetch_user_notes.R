@@ -27,8 +27,8 @@ fetch_user_notes <- function(authors = NA, event_refs = NA, pubkey_refs = NA,
   http_post_result <- send_post_request(url, body)
 
   # Parse the JSON response and store the result
-  json_result <- http_post_result |>
-    httr2::resp_body_json()
+  json_result <- httr2::resp_body_json(http_post_result)
+
 
   # Return the result
   return(json_result)
