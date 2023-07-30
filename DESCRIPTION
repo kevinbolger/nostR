@@ -1,0 +1,10 @@
+Package: nostR
+Title: What the Package Does (One Line, Title Case)
+Version: 0.1.0
+Authors@R: 
+    person("Kevin", "Volger", , "kevin@kevinbolger.xyz", role = c("aut", "cre"))
+Description: Provides a wrapper interface for the NSA API (https://github.com/garyokeeffe/NSA)
+License: `use_mit_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
