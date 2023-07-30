@@ -24,9 +24,10 @@ When using the package in a fresh environment, be sure to first user the `set_co
 
 ```R
 base_url <- "url_of_API_deployment"
+private_key <- "some_user_private_key"
 # Deploy url using instructions [here](https://github.com/garyokeeffe/NSA).
 
-nostR::set_config_environment(api_base_url = base_url)
+nostR::set_config_environment(api_base_url = base_url, private_key = private_key)
 
 authors <- c('some_users_npub')
 results <- nostR::user_notes(authors = authors)
