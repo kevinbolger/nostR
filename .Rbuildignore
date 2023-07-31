@@ -2,3 +2,4 @@
 ^renv\.lock$
 ^nostR\.Rproj$
 ^\.Rproj\.user$
+^\.github$

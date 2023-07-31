@@ -39,3 +39,7 @@ View(results)
 After cloning the repo, open the project file in `RStudio`. Ensure you have the `renv` package installed then run `renv::restore()` to install the dependencies for the project via the lockfile.
 
 If making any changes, ensure the lockfile is up to date by running `renv::snapshot()`.
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/kevinbolger/nostR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kevinbolger/nostR/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
