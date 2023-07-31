@@ -2,11 +2,17 @@
 #'
 #' Looks up notes posted by a user.
 #'
-#' @param authors A list of the nostr npub's or hex's of an author.
+#' @param authors List or string of npub or HEX formatted author(s)
+#' @param event_refs List or string of event references
+#' @param pubkey_refs List or string of pub key references
+#' @param since INT of interval start
+#' @param until INT of interval termination
+#' @param limit INT of #notes to fetch per relay (Defaults to 2000)
 #' @return Result stored in json format
+#' @importFrom httr2 resp_body_json
 #' @export
 fetch_user_notes <- function(authors = NA, event_refs = NA, pubkey_refs = NA,
-                             since = NA, until = NA, limit = NA ) {
+                             since = NA, until = NA, limit = 2000 ) {
 
   authors <- check_values(authors)
   event_refs <- check_values(event_refs)

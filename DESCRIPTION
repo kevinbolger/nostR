@@ -1,10 +1,14 @@
 Package: nostR
-Title: What the Package Does (One Line, Title Case)
-Version: 0.1.0
+Title: The nostr R NSA API Wrapper
+Version: 0.1.2
 Authors@R: 
-    person("Kevin", "Volger", , "kevin@kevinbolger.xyz", role = c("aut", "cre"))
-Description: Provides a wrapper interface for the NSA API (https://github.com/garyokeeffe/NSA)
-License: `use_mit_license()`
+    person("Kevin", "Bolger", , "kevin@kevinbolger.xyz", role = c("aut", "cre"))
+Description: This package provides a wrapper interface for the NSA API
+    (https://github.com/garyokeeffe/NSA), allowing users to easily access
+    and analyze data from the NSA. It includes functions for authentication,
+    data retrieval, and data manipulation.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Imports: httr2, jsonlite

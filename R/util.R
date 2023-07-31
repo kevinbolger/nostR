@@ -61,8 +61,10 @@ verify_api_config_success <- function(){
 
 #' Util function for sending post requests
 #'
+#' @param url Endpoint URL
 #' @param body The body of the post request
-#'
+#' @importFrom jsonlite toJSON
+#' @importFrom httr2 request req_method req_body_raw req_headers req_perform
 #' @return True if successful.
 send_post_request <- function(url, body){
   # Manually encode the body as a JSON string

@@ -2,10 +2,10 @@
 #'
 #' Allows the owner of a nostr public id to publish a note.
 #'
-#' @param note The message to post to the note.
+#' @param text The message to post to the note.
 #' @return True if succesful
 #' @export
-send_user_note <- function(text) {
+send_note <- function(text) {
   # Construct the URL for the API endpoint
   url <- paste0(config_env$api_base_url, "/v0/send/note")
 

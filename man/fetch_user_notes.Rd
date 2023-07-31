@@ -10,11 +10,21 @@ fetch_user_notes(
   pubkey_refs = NA,
   since = NA,
   until = NA,
-  limit = NA
+  limit = 2000
 )
 }
 \arguments{
-\item{authors}{A list of the nostr npub's or hex's of an author.}
+\item{authors}{List or string of npub or HEX formatted author(s)}
+
+\item{event_refs}{List or string of event references}
+
+\item{pubkey_refs}{List or string of pub key references}
+
+\item{since}{INT of interval start}
+
+\item{until}{INT of interval termination}
+
+\item{limit}{INT of #notes to fetch per relay (Defaults to 2000)}
 }
 \value{
 Result stored in json format

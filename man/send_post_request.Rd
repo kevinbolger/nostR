@@ -7,6 +7,8 @@
 send_post_request(url, body)
 }
 \arguments{
+\item{url}{Endpoint URL}
+
 \item{body}{The body of the post request}
 }
 \value{
