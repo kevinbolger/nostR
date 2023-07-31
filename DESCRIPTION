@@ -11,7 +11,9 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-Imports: httr2, jsonlite
+Imports: 
+    httr2 (>= 0.2.3),
+    jsonlite (>= 1.8.7)
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
